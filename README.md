@@ -46,5 +46,3 @@
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/codehide09/codehide09/output/snake.svg" alt="Snake animation" />
-
-###
