@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battledge - Tournament App</title>
+    
+    <!-- Meta Pixel Code -->
+<script async="" src="js/fbevents.js"></script><script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '597741301505459');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=597741301505459&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Plugins -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Iconic Fonts -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-affix">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto col-lg-6 order-lg-2 d-lg-none">
+            <button class="navbar-toggler d-xl-none" data-toggle="offcanvas" data-target="#offcanvas-left">
+              <img src="images/menu-dark.svg" class="menu__btn menu-dark" alt="Menu">
+              <img src="images/menu-light.svg" class="menu__btn menu-light" alt="Menu">
+            </button>
+          </div>
+
+          <div class="col-auto col-sm-auto order-lg-1 text-lg-left mr-sm-auto mr-lg-0">
+            <a class="navbar-brand logo" href="#">
+           <!---   <img src="images/logo-dark.png" alt="ANKAA" class="logo-dark">
+              <img src="images/logo-light.png" alt="ANKAA" class="logo-light"> ---!>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-auto order-lg-2 ml-auto">
+            <div id="offcanvas-left" class="offcanvas-md" data-animation="slideLeft">
+              <button type="button" class="close fw-100" data-toggle="offcanvas-close" aria-label="Close">
+                <img src="images/close-dark.svg" class="menu__btn closeMenu__btn menu-dark" alt="Close">
+                <img src="images/close-light.svg" class="menu__btn closeMenu__btn menu-light" alt="Close">
+              </button>
+              <ul class="nav navbar-nav mr-6 mr-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link px-0 px-lg-3 px-xl-5 active" data-scroll="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-0 px-lg-3 px-xl-5" data-scroll="#features">Features</a>
+                </li>
+                <li class="nav-item" style="display: none;">
+                  <a class="nav-link px-0 px-lg-3 px-xl-5" data-scroll="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-0 px-lg-3 px-xl-5" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-0 px-lg-3 px-xl-5" data-scroll="#contact_us">Contact Us</a>
+                </li>
+                <li class="nav-item btn-wrapper pl-lg-6" style="display: none;">
+                  <a class="btn btn-sm btn-light mr-3" href="#" data-toggle="modal" data-target="#userLogin">Login</a>
+                  <a class="btn btn-sm btn-outline-light" href="register.html">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /.nav -->
+
+    <!-- header -->
+    <header id="home" class="header" data-style="2">
+      <div class="header-hero hero-solid d-flex align-items-center text-light" data-gradient="1">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mr-auto">
+              <div class="hero-cont ad-700ms">
+                <div class="mb-4">
+                  <h1 class="display-lg-4 fw-700 mb-6">Battledge</h1>
+                  <p class="lead-lg-2 mb-6">An Ultimate eSports Games Platform for organizes Online Tournament. BattleWorld is an Online Portal that Offers Unlimited Entertainment for Participating and Playing Games Online.</p>
+                  <p class="lead-lg-2 mb-6">Daily tournaments for your favourite games. Build your stats & win exciting prizes!</p>
+                  <p class="lead-lg-2 mb-6">Note: Refer your friends & get free coins to unlock exciting rewards.</p>
+                </div>
+                <a href="app.apk" class="btn btn-lg btn-round btn-sm-block btn-light mr-6 my-3">Download demo App</a>
+                <a data-video="https://youtube.com/@Battledge009?si=NT2FnEC4LFugr7CT" data-modal-video="play" data-toggle="modal" data-target="#videoModal" class="btn btn-lg btn-round btn-sm-block btn-play my-3">
+                  <img src="images/play.svg" class="icon" alt="Play">Watch video
+                </a>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-md-4 text-center overflow-hidden">
+              <img src="images/device-hero.png" class="device-hero" alt="Device">
+            </div>
+          </div>
+        </div>
+        <div class="media-container">
+          <video poster="assets/media/video.jpg" class="first-slide o-20" autoplay="autoplay" loop="loop" muted="muted">
+            <source src="assets/media/video.mp4" type="video/mp4">
+            Video tag not supported.
+          </video>
+        </div>
+      </div>
+      <a data-scroll="#content-main"><div class="scroll-arrow "><span class="ti-angle-down"></span></div></a>
+      <!-- modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content bg-dark-end">
+            <div class="modal-header border-dark bg-transparent">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="text-light" aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="position-relative ar-16_9">
+              <iframe class="overlay border-0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-->
+    </header>
+    <!-- /.header -->
+
+    <!-- main -->
+    <main id="content-main" class="content-main">
+
+      <!-- new -->
+      <section class="wn__section content-section">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2>Some Cool Features</h2>
+          </header>
+          <div class="wn_wrapper">
+            <div class="wn__body">
+              <div class="row gutters-y">
+                <div class="col-md-6 col-lg-3 mb-7 mb-lg-0">
+                  <div class="px-3">
+                    <div class="wn__icon">
+                      <div class="w-100">
+                        <img src="images/phone.png" alt="Icon">
+                      </div>
+                    </div>
+                    <h6 class="wn__title">Join Custom Tournaments</h6>
+                    <p>Enjoy the Custom Matches Everyday. Play with your Friends, Perform Good &amp; Get Rewarded.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-7 mb-lg-0">
+                  <div class="px-3">
+                    <div class="wn__icon">
+                      <div class="w-100">
+                        <img src="images/like.png" alt="Icon">
+                      </div>
+                    </div>
+                    <h6 class="wn__title">Play with your Real Friends</h6>
+                    <p>Team-up in Duo &amp; Squad Matches with your Real Friends &amp; Reach the Peak Performance Level.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-7 mb-md-0">
+                  <div class="px-3">
+                    <div class="wn__icon">
+                      <div class="w-100">
+                        <img src="images/analytic.png" alt="Icon">
+                      </div>
+                    </div>
+                    <h6 class="wn__title">Get Rewards Directly in Paytm Cash</h6>
+                    <p>Not only for Winning, but also on each Kills and to runner ups. So you get rewarded even when you just score kills.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="px-3">
+                    <div class="wn__icon">
+                      <div class="w-100">
+                        <img src="images/alert.png" alt="Icon">
+                      </div>
+                    </div>
+                    <h6 class="wn__title">Get Push Alerts Messages.</h6>
+                    <p>Alert notifications messages will Come to App</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.new -->
+
+      <!-- features -->
+      <section id="features" class="features__section content-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-6 order-2 order-lg-1">
+              <div class="features_wrapper">
+                <!-- item -->
+                <div class="features__item-wrapper">
+                  <div class="features__item">
+                    <div class="mb-6 mb-lg-0 mr-lg-6">
+                      <div class="features_img_wrapper">
+                        <img src="images/speed.png" alt="Speed">
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="features__title">Fast Performance</h4>
+                      <p>Battleworld built using latest technology so user never hesitate for its performance.</p>
+                    </div>
+                    <div>
+                      <hr class="features__hr">
+                      <div data-toggle="tooltip" data-placement="top" title="Seamless integration"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item -->
+                <!-- item -->
+                <div class="features__item-wrapper">
+                  <div class="features__item">
+                    <div class="mb-6 mb-lg-0 mr-lg-6">
+                      <div class="features_img_wrapper">
+                        <img src="images/resp.png" alt="Speed">
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="features__title">Highlights of Tournaments</h4>
+                      <p>Watch the Highlights &amp; Live Streams of Completed Tournaments at anytime on YouTube.</p>
+                    </div>
+                    <div>
+                      <hr class="features__hr">
+                      <div data-toggle="tooltip" data-placement="top" title="Ease of access"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item -->
+                <!-- item -->
+                <div class="features__item-wrapper">
+                  <div class="features__item">
+                    <div class="mb-6 mb-lg-0 mr-lg-6">
+                      <div class="features_img_wrapper">
+                        <img src="images/sett.png" alt="Speed">
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="features__title">Multiple services</h4>
+                      <p>All the sensitive details are encrypted for data transmission.</p>
+                    </div>
+                    <div>
+                      <hr class="features__hr">
+                      <div data-toggle="tooltip" data-placement="top" title="Multiple services"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item -->
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-sm-8 mx-auto order-1 order-lg-2 mb-8 mb-lg-0">
+              <div class="features_device__bg_wrapper">
+                <img src="images/features__bg.png" class="features_device__bg" alt="Device Background" data-animation="true">
+              </div>
+              <img src="images/features.png" class="features_device" alt="Apps">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.features -->
+
+      <!-- content block -->
+      <section class="content-section bg-gray" style="display: none;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-8 mb-lg-0">
+              <img src="images/1.png" alt="Apps">
+            </div>
+            <div class="col-lg-5 order-lg-1 mr-auto">
+              <h3 class="mb-4">Fast and Smooth</h3>
+              <hr class="hr_theme ml-0 mr-auto">
+              <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a commodo enim. Integer sed maximus ligula. Vestibulum fermentum, purus sit amet aliquet molestie, tortor ante lobortis nisi, in bibendum ante purus eu ipsum.</p>
+              <a href="#" class="btn btn-lg btn-round btn-primary">Get Start Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content block -->
+
+      <!-- content block -->
+      <section class="content-section" style="display: none;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mr-auto overflow-hidden mb-8 mb-lg-0">
+              <img src="images/2.png" alt="Apps">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="mb-4">Share your passion to the world</h3>
+              <hr class="hr_theme ml-0 mr-auto">
+              <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a commodo enim. Integer sed maximus ligula. Vestibulum fermentum, purus sit amet aliquet molestie, tortor ante lobortis nisi, in bibendum ante purus eu ipsum.</p>
+              <a href="#" class="btn btn-lg btn-round btn-primary">Get Start Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content block -->
+
+      <!-- screenshot -->
+      <div class="screenshot__section bg-primary content-section">
+        <div class="container">
+          <div class="screenshot_wrapper">
+            <div class="owl-carousel" data-carousel-items="1,3,5" data-carousel-margin="30" data-carousel-nav="false">
+              <div class="item">
+                <img src="images/sc-01.jpg" alt="App">
+              </div>
+              <div class="item">
+                <img src="images/sc-02.jpg" alt="App">
+              </div>
+              <div class="item">
+                <img src="images/sc-03.jpg" alt="App">
+              </div>
+              <div class="item">
+                <img src="images/sc-04.jpg" alt="App">
+              </div>
+              <div class="item">
+                <img src="images/sc-05.jpg" alt="App">
+              </div>
+              <div class="item">
+                <img src="images/sc-06.jpg" alt="App">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.screenshot -->
+
+      <!-- timeline -->
+      <section class="timeline__section content-section" style="display: none;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-6 mb-lg-0 text-center">
+              <img src="images/timeline.png" alt="Timeline">
+            </div>
+            <div class="col-lg-6">
+              <div class="timeline-vertical-x timeline-step">
+                  <div class="timeline-item" data-step="1">
+                    <h5>Create and update your Profile</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="timeline-item" data-step="2">
+                    <h5>Sort &amp; Filter through categories and services</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="timeline-item" data-step="3">
+                    <h5>Search to access relevant services</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.timeline -->
+
+      <!-- pricing -->
+      <section id="pricing" class="pricing__section bg-gray content-section" style="display: none;">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="mb-4">Choose Your Plan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </header>
+          <div class="pricing_table pricing--palden">
+            <div class="pricing_item pricing_item--start">
+              <h5 class="pricing_title fw-300">Startup</h5>
+              <div class="pricing_deco">
+                <ul class="pricing_feature-list">
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>1 Free Push Notification</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>5 Email Accounts</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Support at $5/mo</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Full cloud access</li>
+                  <li class="pricing_feature"><i class="text-danger fas fa-times mr-2"></i>Customzie Notification</li>
+                </ul>
+                <div class="pricing_price">19<span class="pricing_currency">$</span></div>
+              </div>
+              <div class="pricing_action_wrapper"><a href="#" class="pricing_action fw-600 btn">Buy</a></div>
+            </div>
+            <div class="pricing_item pricing_item--featured">
+                <h5 class="pricing_title fw-600">Business</h5>
+                <div class="pricing_deco">
+                  <ul class="pricing_feature-list">
+                    <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Unlimited Notifications</li>
+                    <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>200 GB of space</li>
+                    <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Customzie Notification</li>
+                    <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Full cloud access</li>
+                    <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Your own branded app</li>
+                  </ul>
+                  <div class="pricing_price">39<span class="pricing_currency">$</span></div>
+                </div>
+                <div class="pricing_action_wrapper"><a href="#" class="pricing_action fw-600 btn">Buy</a></div>
+            </div>
+            <div class="pricing_item pricing_item--end">
+              <h5 class="pricing_title fw-300">Enterprise</h5>
+              <div class="pricing_deco">
+                <ul class="pricing_feature-list">
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Your own branded app</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Unlimited Notifications</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>350 GB of space</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Customzie Notification</li>
+                  <li class="pricing_feature"><i class="text-success fas fa-check mr-2"></i>Full cloud access</li>
+                </ul>
+                <div class="pricing_price">59<span class="pricing_currency">$</span></div>
+              </div>
+              <div class="pricing_action_wrapper"><a href="#" class="pricing_action fw-600 btn">Buy</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.pricing -->
+
+      <!-- testimonials -->
+      <section class="testimonials__section content-section" style="display: none;">
+        <div class="container">
+          <header class="section-header text-center">
+            <h2 class="mb-4">Testimonials</h2>
+            <p>Here's what some of our customers have to say about us:</p>
+          </header>
+          <div class="owl-carousel text-center" data-carousel-nav="true" data-carousel-navtext="<span class='icon-cl-next pe-7s-angle-left'></span>, <span class='icon-cl-next pe-7s-angle-right'></span>">
+            <div class="item">
+              <img src="images/comp-1.png" class="item-comp" alt="Company">
+              <h6>Enim</h6>
+              <span class="d-block text-uppercase mb-4">Online Store</span>
+              <p class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque purus, varius sit amet scelerisque id, iaculis ut diam. </p>
+              <div>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star-half-alt text-primary"></i>
+              </div>
+            </div>
+            <div class="item">
+                <img src="images/comp-2.png" class="item-comp" alt="Company">
+                <h6>exCUBE</h6>
+                <span class="d-block text-uppercase mb-4">Online Store</span>
+                <p class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque purus, varius sit amet scelerisque id, iaculis ut diam. </p>
+                <div>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star text-primary"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            <div class="item">
+              <img src="images/comp-3.png" class="item-comp" alt="Company">
+              <h6>Vehicula</h6>
+              <span class="d-block text-uppercase mb-4">Online Store</span>
+              <p class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque purus, varius sit amet scelerisque id, iaculis ut diam. </p>
+              <div>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/comp-4.png" class="item-comp" alt="Company">
+              <h6>Vehicula</h6>
+              <span class="d-block text-uppercase mb-4">Online Store</span>
+              <p class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean neque purus, varius sit amet scelerisque id, iaculis ut diam. </p>
+              <div>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.testimonials -->
+
+      <!-- newsletter -->
+      <section class="newsletter__section content-section" style="display: none;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-6 mb-lg-0">
+              <h3 class="mb-4">Subscribe to our newsletter</h3>
+              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="col-lg-5 ml-auto">
+              <form class="input-rounded">
+                <div class="form-group input-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Enter your Email">
+                  <div class="input-group-append ml-3">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.newsletter -->
+
+      <!-- contact us -->
+      <section id="contact_us" class="contact_us__section content-section bg-primary text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <header class="section-header mw-100 text-center">
+                <h2 class="mb-4">Contact Us</h2>
+                <p class="lead-lg-1">Whatsapp me on :  <a style="color: blue;" href="https://wa.me/91827955545"><u>+91-8227955545</u></a></p>
+                <p class="lead-lg-1">Youtube Channel: <a style="color: blue;" href="https://youtube.com/@Battledge009?si=moGjTVZOita3MIrb"><u>Click Here</u></a></p>
+                <p class="lead-lg-1" style="display: none;">Facebook page : <a style="color: blue;" href="https://www.facebook.com"><u>www.facebook.com</u></a></p>
+                <p class="lead-lg-1" style="display: none;">Instagram page : <a style="color: blue;" href="https://www.instagram.com"><u>www.instagram.com</u></a></p>
+              </header>
+              <form class="input-rounded" style="display: none;" data-form="contact_form" action="assets/php/contact-form.php" method="POST"><div class="alert" role="alert" data-alert="result" style="display: none;"></div>
+                <div class="form-row contact_us__row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input class="form-control form-control-lg" type="text" name="name" id="name" required="">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" class="form-control form-control-lg" type="tel" name="phone" required="">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" class="form-control form-control-lg" required="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4" name="message" required=""></textarea>
+                </div>
+                <div class="form-row contact_us__row">
+                  <div class="form-group col-md-6 mb-6 mb-md-4">
+                    <label for="email">E-mail</label>
+                    <input class="form-control form-control-lg" id="email" type="email" name="email" required="">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="send_message" class="d-none d-md-inline-block o-0">Send Message</label>
+                    <button id="send_message" class="btn-contact_us btn form-control form-control-lg" type="submit">Send it over</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.contact us -->
+
+      <!-- faq -->
+      <section class="faq__section content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <header class="section-header text-center">
+                <h2 class="mb-0">Any questions?</h2>
+              </header>
+              <div id="accordion-faq" class="accordion accordion-connected">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapse-4-1">
+                        <span class="icon"><span class="fas fa-plus"></span></span>
+                        <span class="fw-500"> How to Get the PUBG Room ID and Password?</span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapse-4-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faq">
+                    <div class="card-body">
+                      Room ID and Password (for PUBG Mobile, Free Fire, etc. ) are shared through inside the app. Just open the app and scroll down to the match you participated, click on it and there you will get the Room ID and Password before 15 minutes of match start time. Make sure you join the Room within 15 minutes before match start time.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapse-4-2" class="collapsed">
+                        <span class="icon"><span class="fas fa-plus"></span></span>
+                        <span class="fw-500"> Can I team-up and play with my friends in a PUBG Match? </span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapse-4-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                    <div class="card-body">
+                      Yes, you can team-up and play with your friends in a same team in a match. To do so, make sure you and your friends have registered for the same match and when the Room ID and Password are shared, make sure all your registered friends and you join the room and take the same team slot.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <a data-toggle="collapse" href="#collapse-4-3" class="collapsed">
+                        <span class="icon"><span class="fas fa-plus"></span></span>
+                        <span class="fw-500">Why is my account suspended?</span>
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapse-4-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+                    <div class="card-body">
+                      If your account is suspended then that means you were found violating the fair play policy or the gameplay rules. In such cases, the account won't be recovered and all the balance in it is lost. Kindly make sure you strictly follow the fair play policies and gameplay rules. Thank you!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.faq -->
+
+      <!-- download-app -->
+      <section class="download__section content-section text-center text-light">
+        <div class="container">
+          <h2 class="title-download display-lg-4 mb-7">Ready? Get it </h2>
+          <div class="row">
+            <div class="col-8 mx-auto col-lg-12">
+              <a href="#" class="btn-download btn btn-lg btn-round btn-light" style="display: none;"><span class="lead-4"><i class="fab fa-apple"></i></span></a>
+              <a href="app.apk" class="btn-download btn btn-lg btn-round btn-light"><span class="lead-4"><i class="fab fa-google-play"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.download-app -->
+
+    </main>
+    <!-- /.main -->
+
+    <!-- footer -->
+    <footer class="footer footer-default">
+      <div class="container">
+        <div class="row gutters-y">
+          <div class="col-lg-2">
+        <!---    <a href="#" class="logo"><img src="images/logo-light.png" alt="Logo" class="logo-light"></a> ---!>
+          </div>
+          <div class="col-6 col-lg-2" style="display: none;">
+            <h6 class="nav-title mb-4">Company</h6>
+            <div class="nav flex-column">
+              <a class="nav-link" href="#">Freebies</a>
+              <a class="nav-link" href="#">Partners</a>
+              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="#">Assets</a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2" style="display: none;">
+            <h6 class="nav-title mb-4">Learn</h6>
+            <div class="nav flex-column">
+              <a class="nav-link" href="#">Fees</a>
+              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#">Partnerships</a>
+              <a class="nav-link" href="#">Find a Store</a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2" style="display: none;">
+              <h6 class="nav-title mb-4">Communities</h6>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">Developers</a>
+                <a class="nav-link" href="#">Brands</a>
+                <a class="nav-link" href="#">Investors</a>
+                <a class="nav-link" href="#">Vendors</a>
+              </div>
+            </div>
+          <div class="col-lg-4">
+            <div class="social-buttons text-lg-right lead-1">
+              <a class="social-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="social-twitter" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="social-dribbble" href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-4 d-flex align-items-center justify-content-sm-end">
+            <span>© 2020 Battledge</span>
+          </div>
+        </div>
+        <div class="row gutters-y mt-8 mt-lg-12 small" style="display: none;">
+          <div class="col-sm-9 col-lg-8">
+            <ul class="nav nav-small">
+              <li><a href="#" class="nav-link">Terms</a></li>
+              <li><a href="#" class="nav-link">Privacy</a></li>
+              <li><a href="#" class="nav-link">Policy &amp; Safety</a></li>
+              <li><a href="#" class="nav-link">Send feedback</a></li>
+              <li><a href="#" class="nav-link">Test new features</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-lg-4 d-flex align-items-center justify-content-sm-end">
+            <span>© 2020 Battledge</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- sign up -->
+    <div class="modal fade" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="userLoginTitle" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="userLoginTitle">Log in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="text-center my-6">
+                <a class="btn btn-circle btn-sm btn-google mr-2" href=""><i class="fab fa-google"></i></a>
+                <a class="btn btn-circle btn-sm btn-facebook mr-2" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-circle btn-sm btn-twitter" href=""><i class="fab fa-twitter"></i></a>
+              </div>
+              <span class="hr-text small my-6">Or</span>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" checked="" id="rememberMeCheck">
+                  <label class="custom-control-label" for="rememberMeCheck">Remember me</label>
+                </div>
+                <a class="text-muted small-3" href="#">Forgot password?</a>
+              </div>
+              <div class="form-group mt-6">
+                <button class="btn btn-block btn-primary" type="submit">Login</button>
+              </div>
+            </form>
+            <span class="small">Don't have an account? <a href="#">Create an account</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.sign up -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- User JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js" id="_mainJS" data-plugins="load"></script>
+  
+
+</body></html>
